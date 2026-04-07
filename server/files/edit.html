@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Movie</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <h1>Edit Movie</h1>
+    
+    <img id="Poster" src="" alt="Poster" style="width:200px; display:block; margin-bottom:20px;">
+
+    <form id="movie-form">
+        <input type="hidden" id="imdbID">
+
+        <div><label>Title:</label><br><input type="text" id="Title"></div>
+        <div><label>Released:</label><br><input type="date" id="Released"></div>
+        <div><label>Plot:</label><br><textarea id="Plot" rows="4" cols="50"></textarea></div>
+        
+        <div><label>Genres:</label><br><input type="text" id="Genres"></div>
+        <div><label>Directors:</label><br><input type="text" id="Directors"></div>
+        <div><label>Actors:</label><br><input type="text" id="Actors"></div>
+
+        <br>
+        <button type="button" onclick="putMovie()">Save</button>
+        <button type="button" onclick="location.href='index.html'">Cancel</button>
+    </form>
+
+    <script src="edit.js"></script>
+</body>
+</html>
